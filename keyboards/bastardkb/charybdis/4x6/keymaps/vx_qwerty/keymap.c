@@ -43,6 +43,8 @@ static uint16_t auto_pointer_layer_timer = 0;
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD
 #endif     // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 
+#define CHARYBDIS_DRAGSCROLL_REVERSE_Y
+
 #define LOWER MO(LAYER_LOWER)
 #define RAISE MO(LAYER_RAISE)
 #define GAMING TG(LAYER_GAMING)
@@ -118,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    KC_BTN3, KC_BTN1, KC_BTN2, KC_BTN4, KC_BTN5, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_SLEP, _______, DRGSCRL, SNIPING, XXXXXXX, XXXXXXX,    XXXXXXX, MS_WHLL, MS_WHLD, MS_WHLR, _______, KC_SLEP,
+       KC_SLEP, _______, DRGSCRL, SNIPING, XXXXXXX, XXXXXXX,    MS_WHLL, MS_WHLR, MS_WHLD, DRGSCRL, _______, KC_SLEP,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_BTN3, KC_BTN1, KC_BTN2,    KC_BTN3, KC_BTN1,
                                            KC_BTN4, KC_BTN5,    KC_BTN2
@@ -132,7 +134,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LSFT,    KC_A,    KC_S,   KC_D,   KC_F,   KC_G,       KC_BTN3, KC_BTN1, KC_BTN2, KC_BTN4, KC_BTN5, KC_QUOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    MS_WHLL, MS_WHLD, MS_WHLR, KC_SLSH, KC_LALT,
+       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       MS_WHLL,    MS_WHLR, MS_WHLD, DRGSCRL, SNIPING, KC_LALT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                    KC_BSPC,  KC_SPC,   KC_TAB,      KC_BTN3, KC_BTN1,
                                              GAMING,   KC_GRV,     	KC_BTN2
