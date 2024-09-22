@@ -43,8 +43,6 @@ static uint16_t auto_pointer_layer_timer = 0;
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD
 #endif     // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 
-#define CHARYBDIS_DRAGSCROLL_REVERSE_Y
-
 #define LOWER MO(LAYER_LOWER)
 #define RAISE MO(LAYER_RAISE)
 #define GAMING TG(LAYER_GAMING)
@@ -114,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_POINTER] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       QK_BOOT,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,    EE_CLR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  QK_BOOT,
+       QK_BOOT,  XXXXXXX, XXXXXXX, MAGIC_TOGGLE_NKRO, XXXXXXX, EE_CLR,    EE_CLR, XXXXXXX, MAGIC_TOGGLE_NKRO, XXXXXXX, XXXXXXX,  QK_BOOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DPI_MOD, S_D_MOD,    XXXXXXX, XXXXXXX, MS_WHLU, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
