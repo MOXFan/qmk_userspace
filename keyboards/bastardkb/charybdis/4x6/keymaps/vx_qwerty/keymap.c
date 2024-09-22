@@ -54,6 +54,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define CTL_K LCTL_T(KC_K)
 #define ALT_S LALT_T(KC_S)
 #define ALT_L LALT_T(KC_L)
+#define NKRO QK_MAGIC_TOGGLE_NKRO
 
 
 #ifndef POINTING_DEVICE_ENABLE
@@ -112,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_POINTER] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       QK_BOOT,  XXXXXXX, XXXXXXX, MAGIC_TOGGLE_NKRO, XXXXXXX, EE_CLR,    EE_CLR, XXXXXXX, MAGIC_TOGGLE_NKRO, XXXXXXX, XXXXXXX,  QK_BOOT,
+       QK_BOOT,  XXXXXXX, XXXXXXX, NKRO, XXXXXXX, EE_CLR,    EE_CLR, XXXXXXX, NKRO, XXXXXXX, XXXXXXX,  QK_BOOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DPI_MOD, S_D_MOD,    XXXXXXX, XXXXXXX, MS_WHLU, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
