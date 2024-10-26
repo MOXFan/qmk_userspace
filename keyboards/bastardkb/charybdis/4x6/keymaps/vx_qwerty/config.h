@@ -26,7 +26,7 @@
 #    define NO_ACTION_ONESHOT
 #endif // __arm__
 
-#define TAPPING_TERM 160
+#define TAPPING_TERM 155
 
 /* Charybdis-specific features. */
 
