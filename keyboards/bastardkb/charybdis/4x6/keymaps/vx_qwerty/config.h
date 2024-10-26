@@ -26,6 +26,8 @@
 #    define NO_ACTION_ONESHOT
 #endif // __arm__
 
+#define TAPPING_TERM 200
+
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE
